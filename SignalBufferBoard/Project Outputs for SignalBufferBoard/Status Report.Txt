@@ -1,0 +1,19 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [SignalBufferBoard.PrjPcb]
+   Generated File[SignalBufferBoard.GTO]
+   Generated File[SignalBufferBoard.GTS]
+   Generated File[SignalBufferBoard.GTL]
+   Generated File[SignalBufferBoard.GBL]
+   Generated File[SignalBufferBoard.GBS]
+   Generated File[SignalBufferBoard.GBO]
+   Generated File[SignalBufferBoard.GKO]
+   Generated File[SignalBufferBoard.RUL]
+   Generated File[SignalBufferBoard.EXTREP]
+   Generated File[SignalBufferBoard.REP]
+
+
+Files Generated   : 10
+Documents Printed : 0
+
+Finished Output Generation At 6:54:08 PM On 7/18/2021

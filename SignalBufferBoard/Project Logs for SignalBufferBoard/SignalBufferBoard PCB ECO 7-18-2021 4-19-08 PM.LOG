@@ -1,0 +1,14 @@
+Change Component Footprint: Designator=R1 Old Footprint=RESC1608X55X30ML20T20 New Footprint=RESC2013X60X40ML20T25
+Change Component Footprint: Designator=R2 Old Footprint=RESC1608X55X30ML20T20 New Footprint=RESC2013X60X40ML20T25
+Change Component Comment : Designator=R1 Old Comment=ERA3AEB104V New Comment=ERA6AEB104V
+Change Component Comment : Designator=R2 Old Comment=ERA-3AEB204V New Comment=ERA6AEB204V
+Change Managed Component Library Link : Designator=R1 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=BD7E8EC6-05E2-440A-B7BC-75F9C4343D16 New ItemGUID=87DC9B39-B5EA-4164-A00C-B6090D995D64 Old RevisionGUID=919D0614-6798-4188-99A0-1AEEF41CEC8B New RevisionGUID=46F26A54-8276-4AEA-8457-83354E4BF19F
+Change Managed Component Library Link : Designator=R2 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=16B64E47-8C35-4383-8586-D58FCFFAC0FB New ItemGUID=3EF522D9-E20E-460B-A97A-77E484D81E41 Old RevisionGUID=950A9A9F-CCF0-41F4-842D-369683D61B40 New RevisionGUID=4C0AEC14-96C3-4EFF-9064-6FBAB1E049F0
+Change component parameters: Designator = "R1" ("R1"); Footprint = "RESC1608X55X30ML20T20"; UniqueID = "\TXRBWVQG" ("\TXRBWVQG")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "ERA6AEB104V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R2" ("R2"); Footprint = "RESC1608X55X30ML20T20"; UniqueID = "\QBPMQCPM" ("\QBPMQCPM")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "ERA6AEB204V"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=SignalBufferBoard Member=Component R11 ERA3AEB104V
+Added Member To Class: ClassName=SignalBufferBoard Member=Component R14 ERA-3AEB204V

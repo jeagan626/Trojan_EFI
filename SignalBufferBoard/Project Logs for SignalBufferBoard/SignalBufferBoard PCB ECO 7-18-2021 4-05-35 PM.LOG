@@ -1,0 +1,6 @@
+Change Component Designator: OldDesignator=R13 NewDesignator=R15
+Change Component Designator: OldDesignator=R14 NewDesignator=R16
+Change Component Designator: OldDesignator=R15 NewDesignator=R13
+Change Component Designator: OldDesignator=R16 NewDesignator=R14
+Added Member To Class: ClassName=SignalBufferBoard Member=Component R15 ERA3AEB104V
+Added Member To Class: ClassName=SignalBufferBoard Member=Component R16 ERA-3AEB204V

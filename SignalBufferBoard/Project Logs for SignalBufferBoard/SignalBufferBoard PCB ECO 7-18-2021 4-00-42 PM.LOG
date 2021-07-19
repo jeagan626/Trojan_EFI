@@ -1,0 +1,44 @@
+Removed Pin From Net: NetName=Ib Pin=R23-1
+Removed Pin From Net: NetName=Ib Pin=R24-2
+Removed Pin From Net: NetName=I2B Pin=R25-1
+Removed Pin From Net: NetName=I2B Pin=R26-2
+Change Component Designator: OldDesignator=R11 NewDesignator=R1
+Change Component Designator: OldDesignator=R12 NewDesignator=R2
+Change Component Designator: OldDesignator=R13 NewDesignator=R3
+Change Component Designator: OldDesignator=R14 NewDesignator=R4
+Change Component Designator: OldDesignator=R15 NewDesignator=R5
+Change Component Designator: OldDesignator=R16 NewDesignator=R6
+Change Component Designator: OldDesignator=R17 NewDesignator=R7
+Change Component Designator: OldDesignator=R18 NewDesignator=R8
+Change Component Designator: OldDesignator=R19 NewDesignator=R9
+Change Component Designator: OldDesignator=R20 NewDesignator=R10
+Change Component Designator: OldDesignator=R21 NewDesignator=R11
+Change Component Designator: OldDesignator=R22 NewDesignator=R12
+Change Component Designator: OldDesignator=R23 NewDesignator=R13
+Change Component Designator: OldDesignator=R24 NewDesignator=R14
+Change Component Designator: OldDesignator=R25 NewDesignator=R15
+Change Component Designator: OldDesignator=R26 NewDesignator=R16
+Added Pin To Net: NetName=I2B Pin=R13-1
+Added Pin To Net: NetName=I2B Pin=R14-2
+Added Pin To Net: NetName=Ib Pin=R15-1
+Added Pin To Net: NetName=Ib Pin=R16-2
+Change Net Name : Old Net Name=A4 New Net Name=A8
+Change Net Name : Old Net Name=A8 New Net Name=A4
+Added Member To Class: ClassName=SignalBufferBoard Member=Component R1 ERA3AEB104V
+Added Member To Class: ClassName=SignalBufferBoard Member=Component R2 ERA-3AEB204V
+Added Member To Class: ClassName=SignalBufferBoard Member=Component R3 ERA3AEB104V
+Added Member To Class: ClassName=SignalBufferBoard Member=Component R4 ERA-3AEB204V
+Added Member To Class: ClassName=SignalBufferBoard Member=Component R5 ERA3AEB104V
+Added Member To Class: ClassName=SignalBufferBoard Member=Component R6 ERA-3AEB204V
+Added Member To Class: ClassName=SignalBufferBoard Member=Component R7 ERA3AEB104V
+Added Member To Class: ClassName=SignalBufferBoard Member=Component R8 ERA-3AEB204V
+Added Member To Class: ClassName=SignalBufferBoard Member=Component R9 ERA3AEB104V
+Added Member To Class: ClassName=SignalBufferBoard Member=Component R10 ERA-3AEB204V
+Added Member To Class: ClassName=SignalBufferBoard Member=Component R11 ERA3AEB104V
+Added Member To Class: ClassName=SignalBufferBoard Member=Component R12 ERA-3AEB204V
+Added Member To Class: ClassName=SignalBufferBoard Member=Component R13 ERA3AEB104V
+Added Member To Class: ClassName=SignalBufferBoard Member=Component R14 ERA-3AEB204V
+Added Member To Class: ClassName=SignalBufferBoard Member=Component R15 ERA3AEB104V
+Added Member To Class: ClassName=SignalBufferBoard Member=Component R16 ERA-3AEB204V
+Change Room Name: Old Name=Active Signal Converter New Name=SignalBufferBoard
+Change Room Scope: Old Scope=InComponentClass('Active Signal Converter') New Scope=InComponentClass('SignalBufferBoard')

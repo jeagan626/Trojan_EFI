@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=R1 Old Footprint=RESC1608X55X30ML20T20 New Footprint=RESC2013X60X40ML20T25
+Change Component Footprint: Designator=R2 Old Footprint=RESC1608X55X30ML20T20 New Footprint=RESC2013X60X40ML20T25
+Change Component Comment : Designator=R1 Old Comment=ERA3AEB104V New Comment=ERA6AEB104V
+Change Component Comment : Designator=R2 Old Comment=ERA-3AEB204V New Comment=ERA6AEB204V

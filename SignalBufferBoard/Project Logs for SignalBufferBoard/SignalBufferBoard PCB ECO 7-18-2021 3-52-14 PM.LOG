@@ -1,0 +1,31 @@
+Removed Pin From Net: NetName=Ia Pin=U1-3
+Removed Pin From Net: NetName=I2A Pin=U2-3
+Change Component Designator: OldDesignator=R11 NewDesignator=R1
+Change Component Designator: OldDesignator=R12 NewDesignator=R2
+Change Component Designator: OldDesignator=R13 NewDesignator=R3
+Change Component Designator: OldDesignator=R14 NewDesignator=R4
+Change Component Designator: OldDesignator=R15 NewDesignator=R5
+Change Component Designator: OldDesignator=R16 NewDesignator=R6
+Change Component Designator: OldDesignator=R17 NewDesignator=R7
+Change Component Designator: OldDesignator=R18 NewDesignator=R8
+Change Component Designator: OldDesignator=R19 NewDesignator=R9
+Change Component Designator: OldDesignator=R20 NewDesignator=R10
+Change Component Designator: OldDesignator=R21 NewDesignator=R11
+Change Component Designator: OldDesignator=R22 NewDesignator=R12
+Change Component Designator: OldDesignator=R23 NewDesignator=R13
+Change Component Designator: OldDesignator=R24 NewDesignator=R14
+Change Component Designator: OldDesignator=R25 NewDesignator=R15
+Change Component Designator: OldDesignator=R26 NewDesignator=R16
+Added Pin To Net: NetName=I2A Pin=U1-3
+Added Pin To Net: NetName=Ia Pin=U2-3
+Change Net Name : Old Net Name=A4 New Net Name=A8
+Change Net Name : Old Net Name=A8 New Net Name=A4
+Change Net Name : Old Net Name=I2B New Net Name=Ib
+Change Net Name : Old Net Name=Ib New Net Name=I2B
+Change Net Name : Old Net Name=O2 New Net Name=O6
+Change Net Name : Old Net Name=O4 New Net Name=O8
+Change Net Name : Old Net Name=O6 New Net Name=O2
+Change Net Name : Old Net Name=O8 New Net Name=O4
+Change Class Name : Old Net Name=Active Signal Converter New Net Name=SignalBufferBoard
+Change Room Name: Old Name=Active Signal Converter New Name=SignalBufferBoard
+Change Room Scope: Old Scope=InComponentClass('Active Signal Converter') New Scope=InComponentClass('SignalBufferBoard')

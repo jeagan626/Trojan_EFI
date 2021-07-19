@@ -1,0 +1,4 @@
+Change Net Name : Old Net Name=A4 New Net Name=A8
+Change Net Name : Old Net Name=A8 New Net Name=A4
+Added Member To Class: ClassName=SignalBufferBoard Member=Component R13 ERA3AEB104V
+Added Member To Class: ClassName=SignalBufferBoard Member=Component R16 ERA-3AEB204V

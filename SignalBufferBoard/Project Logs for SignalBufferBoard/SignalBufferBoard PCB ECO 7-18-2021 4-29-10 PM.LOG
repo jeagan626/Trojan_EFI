@@ -1,0 +1,84 @@
+Change Component Footprint: Designator=R3 Old Footprint=RESC1608X55X30ML20T20 New Footprint=RESC2013X60X40ML20T25
+Change Component Footprint: Designator=R4 Old Footprint=RESC1608X55X30ML20T20 New Footprint=RESC2013X60X40ML20T25
+Change Component Footprint: Designator=R5 Old Footprint=RESC1608X55X30ML20T20 New Footprint=RESC2013X60X40ML20T25
+Change Component Footprint: Designator=R6 Old Footprint=RESC1608X55X30ML20T20 New Footprint=RESC2013X60X40ML20T25
+Change Component Footprint: Designator=R7 Old Footprint=RESC1608X55X30ML20T20 New Footprint=RESC2013X60X40ML20T25
+Change Component Footprint: Designator=R8 Old Footprint=RESC1608X55X30ML20T20 New Footprint=RESC2013X60X40ML20T25
+Change Component Footprint: Designator=R9 Old Footprint=RESC1608X55X30ML20T20 New Footprint=RESC2013X60X40ML20T25
+Change Component Footprint: Designator=R10 Old Footprint=RESC1608X55X30ML20T20 New Footprint=RESC2013X60X40ML20T25
+Change Component Footprint: Designator=R11 Old Footprint=RESC1608X55X30ML20T20 New Footprint=RESC2013X60X40ML20T25
+Change Component Footprint: Designator=R12 Old Footprint=RESC1608X55X30ML20T20 New Footprint=RESC2013X60X40ML20T25
+Change Component Footprint: Designator=R13 Old Footprint=RESC1608X55X30ML20T20 New Footprint=RESC2013X60X40ML20T25
+Change Component Footprint: Designator=R14 Old Footprint=RESC1608X55X30ML20T20 New Footprint=RESC2013X60X40ML20T25
+Change Component Footprint: Designator=R15 Old Footprint=RESC1608X55X30ML20T20 New Footprint=RESC2013X60X40ML20T25
+Change Component Footprint: Designator=R16 Old Footprint=RESC1608X55X30ML20T20 New Footprint=RESC2013X60X40ML20T25
+Change Component Comment : Designator=R3 Old Comment=ERA3AEB104V New Comment=ERA6AEB104V
+Change Component Comment : Designator=R5 Old Comment=ERA3AEB104V New Comment=ERA6AEB104V
+Change Component Comment : Designator=R7 Old Comment=ERA3AEB104V New Comment=ERA6AEB104V
+Change Component Comment : Designator=R9 Old Comment=ERA3AEB104V New Comment=ERA6AEB104V
+Change Component Comment : Designator=R11 Old Comment=ERA3AEB104V New Comment=ERA6AEB104V
+Change Component Comment : Designator=R13 Old Comment=ERA3AEB104V New Comment=ERA6AEB104V
+Change Component Comment : Designator=R15 Old Comment=ERA3AEB104V New Comment=ERA6AEB104V
+Change Component Comment : Designator=R4 Old Comment=ERA-3AEB204V New Comment=ERA6AEB204V
+Change Component Comment : Designator=R6 Old Comment=ERA-3AEB204V New Comment=ERA6AEB204V
+Change Component Comment : Designator=R8 Old Comment=ERA-3AEB204V New Comment=ERA6AEB204V
+Change Component Comment : Designator=R10 Old Comment=ERA-3AEB204V New Comment=ERA6AEB204V
+Change Component Comment : Designator=R12 Old Comment=ERA-3AEB204V New Comment=ERA6AEB204V
+Change Component Comment : Designator=R14 Old Comment=ERA-3AEB204V New Comment=ERA6AEB204V
+Change Component Comment : Designator=R16 Old Comment=ERA-3AEB204V New Comment=ERA6AEB204V
+Change Managed Component Library Link : Designator=R3 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=BD7E8EC6-05E2-440A-B7BC-75F9C4343D16 New ItemGUID=87DC9B39-B5EA-4164-A00C-B6090D995D64 Old RevisionGUID=919D0614-6798-4188-99A0-1AEEF41CEC8B New RevisionGUID=46F26A54-8276-4AEA-8457-83354E4BF19F
+Change Managed Component Library Link : Designator=R4 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=16B64E47-8C35-4383-8586-D58FCFFAC0FB New ItemGUID=3EF522D9-E20E-460B-A97A-77E484D81E41 Old RevisionGUID=950A9A9F-CCF0-41F4-842D-369683D61B40 New RevisionGUID=4C0AEC14-96C3-4EFF-9064-6FBAB1E049F0
+Change Managed Component Library Link : Designator=R5 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=BD7E8EC6-05E2-440A-B7BC-75F9C4343D16 New ItemGUID=87DC9B39-B5EA-4164-A00C-B6090D995D64 Old RevisionGUID=919D0614-6798-4188-99A0-1AEEF41CEC8B New RevisionGUID=46F26A54-8276-4AEA-8457-83354E4BF19F
+Change Managed Component Library Link : Designator=R6 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=16B64E47-8C35-4383-8586-D58FCFFAC0FB New ItemGUID=3EF522D9-E20E-460B-A97A-77E484D81E41 Old RevisionGUID=950A9A9F-CCF0-41F4-842D-369683D61B40 New RevisionGUID=4C0AEC14-96C3-4EFF-9064-6FBAB1E049F0
+Change Managed Component Library Link : Designator=R7 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=BD7E8EC6-05E2-440A-B7BC-75F9C4343D16 New ItemGUID=87DC9B39-B5EA-4164-A00C-B6090D995D64 Old RevisionGUID=919D0614-6798-4188-99A0-1AEEF41CEC8B New RevisionGUID=46F26A54-8276-4AEA-8457-83354E4BF19F
+Change Managed Component Library Link : Designator=R8 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=16B64E47-8C35-4383-8586-D58FCFFAC0FB New ItemGUID=3EF522D9-E20E-460B-A97A-77E484D81E41 Old RevisionGUID=950A9A9F-CCF0-41F4-842D-369683D61B40 New RevisionGUID=4C0AEC14-96C3-4EFF-9064-6FBAB1E049F0
+Change Managed Component Library Link : Designator=R9 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=BD7E8EC6-05E2-440A-B7BC-75F9C4343D16 New ItemGUID=87DC9B39-B5EA-4164-A00C-B6090D995D64 Old RevisionGUID=919D0614-6798-4188-99A0-1AEEF41CEC8B New RevisionGUID=46F26A54-8276-4AEA-8457-83354E4BF19F
+Change Managed Component Library Link : Designator=R10 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=16B64E47-8C35-4383-8586-D58FCFFAC0FB New ItemGUID=3EF522D9-E20E-460B-A97A-77E484D81E41 Old RevisionGUID=950A9A9F-CCF0-41F4-842D-369683D61B40 New RevisionGUID=4C0AEC14-96C3-4EFF-9064-6FBAB1E049F0
+Change Managed Component Library Link : Designator=R11 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=BD7E8EC6-05E2-440A-B7BC-75F9C4343D16 New ItemGUID=87DC9B39-B5EA-4164-A00C-B6090D995D64 Old RevisionGUID=919D0614-6798-4188-99A0-1AEEF41CEC8B New RevisionGUID=46F26A54-8276-4AEA-8457-83354E4BF19F
+Change Managed Component Library Link : Designator=R12 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=16B64E47-8C35-4383-8586-D58FCFFAC0FB New ItemGUID=3EF522D9-E20E-460B-A97A-77E484D81E41 Old RevisionGUID=950A9A9F-CCF0-41F4-842D-369683D61B40 New RevisionGUID=4C0AEC14-96C3-4EFF-9064-6FBAB1E049F0
+Change Managed Component Library Link : Designator=R13 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=BD7E8EC6-05E2-440A-B7BC-75F9C4343D16 New ItemGUID=87DC9B39-B5EA-4164-A00C-B6090D995D64 Old RevisionGUID=919D0614-6798-4188-99A0-1AEEF41CEC8B New RevisionGUID=46F26A54-8276-4AEA-8457-83354E4BF19F
+Change Managed Component Library Link : Designator=R14 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=16B64E47-8C35-4383-8586-D58FCFFAC0FB New ItemGUID=3EF522D9-E20E-460B-A97A-77E484D81E41 Old RevisionGUID=950A9A9F-CCF0-41F4-842D-369683D61B40 New RevisionGUID=4C0AEC14-96C3-4EFF-9064-6FBAB1E049F0
+Change Managed Component Library Link : Designator=R15 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=BD7E8EC6-05E2-440A-B7BC-75F9C4343D16 New ItemGUID=87DC9B39-B5EA-4164-A00C-B6090D995D64 Old RevisionGUID=919D0614-6798-4188-99A0-1AEEF41CEC8B New RevisionGUID=46F26A54-8276-4AEA-8457-83354E4BF19F
+Change Managed Component Library Link : Designator=R16 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=16B64E47-8C35-4383-8586-D58FCFFAC0FB New ItemGUID=3EF522D9-E20E-460B-A97A-77E484D81E41 Old RevisionGUID=950A9A9F-CCF0-41F4-842D-369683D61B40 New RevisionGUID=4C0AEC14-96C3-4EFF-9064-6FBAB1E049F0
+Change component parameters: Designator = "R3" ("R3"); Footprint = "RESC1608X55X30ML20T20"; UniqueID = "\TGJWXLMW" ("\TGJWXLMW")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "ERA6AEB104V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R4" ("R4"); Footprint = "RESC1608X55X30ML20T20"; UniqueID = "\CWASDHFW" ("\CWASDHFW")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "ERA6AEB204V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R5" ("R5"); Footprint = "RESC1608X55X30ML20T20"; UniqueID = "\FIPABYSM" ("\FIPABYSM")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "ERA6AEB104V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R6" ("R6"); Footprint = "RESC1608X55X30ML20T20"; UniqueID = "\HSMEQWIR" ("\HSMEQWIR")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "ERA6AEB204V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R7" ("R7"); Footprint = "RESC1608X55X30ML20T20"; UniqueID = "\NSTXGDUQ" ("\NSTXGDUQ")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "ERA6AEB104V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R8" ("R8"); Footprint = "RESC1608X55X30ML20T20"; UniqueID = "\ITTPLNFN" ("\ITTPLNFN")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "ERA6AEB204V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R9" ("R9"); Footprint = "RESC1608X55X30ML20T20"; UniqueID = "\HTRIJWBZ" ("\HTRIJWBZ")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "ERA6AEB104V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R10" ("R10"); Footprint = "RESC1608X55X30ML20T20"; UniqueID = "\UNTRBCPK" ("\UNTRBCPK")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "ERA6AEB204V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R11" ("R11"); Footprint = "RESC1608X55X30ML20T20"; UniqueID = "\DJHBODIJ" ("\DJHBODIJ")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "ERA6AEB104V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R12" ("R12"); Footprint = "RESC1608X55X30ML20T20"; UniqueID = "\CRGKUMTG" ("\CRGKUMTG")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "ERA6AEB204V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R13" ("R13"); Footprint = "RESC1608X55X30ML20T20"; UniqueID = "\OBJJCFDR" ("\OBJJCFDR")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "ERA6AEB104V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R14" ("R14"); Footprint = "RESC1608X55X30ML20T20"; UniqueID = "\EMKZSYIN" ("\EMKZSYIN")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "ERA6AEB204V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R15" ("R15"); Footprint = "RESC1608X55X30ML20T20"; UniqueID = "\KKBDKCQF" ("\KKBDKCQF")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "ERA6AEB104V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R16" ("R16"); Footprint = "RESC1608X55X30ML20T20"; UniqueID = "\JDTOSSBF" ("\JDTOSSBF")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "ERA6AEB204V"; VariantName = "[No Variations]"

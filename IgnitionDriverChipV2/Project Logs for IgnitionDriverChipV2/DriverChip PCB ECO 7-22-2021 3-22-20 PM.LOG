@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=Ctrl1 Pin=R1-2
+Removed Pin From Net: NetName=Ctrl2 Pin=R4-2
+Removed Member From Class: ClassName=DriverChip Member=R1
+Removed Member From Class: ClassName=DriverChip Member=R4
+Added Pin To Net: NetName=Ctrl1 Pin=IC1-2
+Added Pin To Net: NetName=Ctrl2 Pin=IC1-4
+Added Room: Name=DriverChip

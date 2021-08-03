@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=GND Pin=U1-3
+Removed Pin From Net: NetName=Out2 Pin=U1-5
+Removed Pin From Net: NetName=VCC Pin=U1-6
+Removed Pin From Net: NetName=Out1 Pin=U1-7
+Removed Member From Class: ClassName=DriverChip Member=U1
+Added Pin To Net: NetName=GND Pin=IC1-3
+Added Pin To Net: NetName=Out2 Pin=IC1-5
+Added Pin To Net: NetName=VCC Pin=IC1-6
+Added Pin To Net: NetName=Out1 Pin=IC1-7
+Added Pin To Net: NetName=NetIC1_2 Pin=IC1-2
+Added Pin To Net: NetName=NetIC1_2 Pin=R1-1
+Added Net: Name=NetIC1_2
+Added Pin To Net: NetName=NetIC1_4 Pin=IC1-4
+Added Pin To Net: NetName=NetIC1_4 Pin=R4-1
+Added Net: Name=NetIC1_4

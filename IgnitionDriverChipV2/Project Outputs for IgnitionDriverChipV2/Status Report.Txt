@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [IgnitionDriverChipV2.PrjPcb]
+   Generated File[DriverChip.TXT]
+   Generated File[DriverChip.LDP]
+   Generated File[DriverChip.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 5:54:33 PM On 8/2/2021

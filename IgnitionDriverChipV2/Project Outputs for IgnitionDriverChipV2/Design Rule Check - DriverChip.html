@@ -1,0 +1,481 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD20\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">8/2/2021</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">5:39:59 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc" class="file"><acronym title="C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc">C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">14</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">25</td></tr>
+</table>
+</td>
+</table><a name="IDPUTGJO1IMLYLMCXGEWIYXXNSDBUC2NPZIF2RP1NVOU3KBDY4ANIP"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDUILSGGPVQRGDDK3COWM5PS2QFLG15HG2Y2RC0ZLHDJAQICBUZ5MO">Design contains shelved or modified (but not repoured) polygons. The result of DRC is not correct. Recommended to restore/repour all polygons and proceed with DRC again</a></td>
+<td class="column2">14</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">14</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDACKHQVDO2OX5K54B3QH1DWSJKIT0ZDGUMKPCDWNYYJVFCLCNQBSP">Clearance Constraint (Gap=6mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDF1XF3EXMNA4KPOBIO5T3DWQONCQL1PBVWL1EK0N1SIIL5RMUELFM">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJYTJ1RO2YVQPKJYT542EAWSKWJVKBO1OHGKAGTNLBJHAZOK2YNVM">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJLLQYGFUHB2VMV0DGAQOBBJGAFC142LB5KMHAHE4BXTFNTHLGIAI">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">7</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXAILSBUFWVNQKNTOR2FTBN2VXCBWV4H4RLOI0VMSUHULOKEYY1GI">Width Constraint (Min=6mil) (Max=400mil) (Preferred=8mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID5WAHYQFBBSY4NJHOVXO0JZVVDCEVKLKHGSIOWQCHWYUBK2FGRUXO">Power Plane Connect Rule(Direct Connect )(Expansion=16mil) (Conductor Width=6mil) (Air Gap=6mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDKFSDBKCU1MMYHRZXKYQY1UHTBDKXFO1PIM1SNPEFP4NJIS44L2WH">Minimum Annular Ring (Minimum=7mil) (All)</a></td>
+<td class="column2">5</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDLJKKXF5D1BDTG413WGYW33WIYGZN1AHIK1ZJUZHNP1INXH5JBPZN">Hole Size Constraint (Min=13mil) (Max=265mil) (All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNYDCK2AEDP2VNO2TEUT2X4MAFPS3BNJCAOX0JCL4RLZB40FFJDO">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2SJJWY4TYG2NCT3M53VHFIHYNCQFVLDE5NBASPTIIPX5KC2TGWK">Minimum Solder Mask Sliver (Gap=0mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDSPS4FGKLCR2GKMLJTM3NDK5SLKOH02VERE2MXBJMEOX1U121DE3K">Silk To Solder Mask (Clearance=6mil) (IsPad),(All)</a></td>
+<td class="column2">3</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDRDKRLNWE0EU1BDQGJCGGDIM0VNT5MEJG1Q4QVONJNAT44JNXHMCK">Silk to Silk (Clearance=0mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDATLARBGW4TJDOAFS4GRH1AH0BI30UUD4WPEOSRLZSTXGX14TQIMF">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXS2CC0VM1QRWLN502KZUJLMRQCB22X053O4S50F3KF5UI2KY0H4B">Board Clearance Constraint (Gap=0mil) (All)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDEFZNVOSC35CPC0XRIYDTQ1CDSPWLBX3VYGTKKRFIFH1IDXAJVFVM">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">25</td>
+</tr>
+</table><br><a name="IDGY0VCK4NRZA2JPNECB3VR1FIVMU4UH3YS13DOPNA0SSAT511JCIO"><h2>Warnings</h2></a><a name="IDUILSGGPVQRGDDK3COWM5PS2QFLG15HG2Y2RC0ZLHDJAQICBUZ5MO"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="warning">Design contains shelved or modified (but not repoured) polygons. The result of DRC is not correct. Recommended to restore/repour all polygons and proceed with DRC again</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: NONET_L01_P005 On Top Layer</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: NONET_L01_P003 On Top Layer</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: NONET_L01_P002 On Top Layer</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: NONET_L01_P001 On Top Layer</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: NONET_L01_P000 On Top Layer</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: NONET_L02_P006 On Bottom Layer</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: NONET_L02_P004 On Bottom Layer</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: NONET_L01_P005 On Top Layer</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: NONET_L01_P003 On Top Layer</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: NONET_L01_P002 On Top Layer</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: NONET_L01_P001 On Top Layer</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: NONET_L01_P000 On Top Layer</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: NONET_L02_P006 On Bottom Layer</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: NONET_L02_P004 On Bottom Layer</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDJLLQYGFUHB2VMV0DGAQOBBJGAFC142LB5KMHAHE4BXTFNTHLGIAI"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Modified Polygon (Allow modified: No), (Allow shelved: No)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1070mil|Location2.X=1138mil|Location1.Y=1675mil|Location2.Y=1850mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1070mil|Location2.X=1138mil|Location1.Y=1675mil|Location2.Y=1850mil|Absolute=True">Modified Polygon: Polygon Shelved  (NONET_L01_P000) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1140mil|Location2.X=1189mil|Location1.Y=1702mil|Location2.Y=1773mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1140mil|Location2.X=1189mil|Location1.Y=1702mil|Location2.Y=1773mil|Absolute=True">Modified Polygon: Polygon Shelved  (NONET_L01_P001) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1167.426mil|Location2.X=1339.426mil|Location1.Y=1714.835mil|Location2.Y=1854.835mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1167.426mil|Location2.X=1339.426mil|Location1.Y=1714.835mil|Location2.Y=1854.835mil|Absolute=True">Modified Polygon: Polygon Shelved  (NONET_L01_P002) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1070mil|Location2.X=1231mil|Location1.Y=1781mil|Location2.Y=1855mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1070mil|Location2.X=1231mil|Location1.Y=1781mil|Location2.Y=1855mil|Absolute=True">Modified Polygon: Polygon Shelved  (NONET_L01_P003) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1241.021mil|Location2.X=1332mil|Location1.Y=1495mil|Location2.Y=1635.507mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1241.021mil|Location2.X=1332mil|Location1.Y=1495mil|Location2.Y=1635.507mil|Absolute=True">Modified Polygon: Polygon Shelved  (NONET_L01_P005) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1069.86mil|Location2.X=1440mil|Location1.Y=1481mil|Location2.Y=1859mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1069.86mil|Location2.X=1440mil|Location1.Y=1481mil|Location2.Y=1859mil|Absolute=True">Modified Polygon: Polygon Shelved  (NONET_L02_P004) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1070mil|Location2.X=1233mil|Location1.Y=1683mil|Location2.Y=1856mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1070mil|Location2.X=1233mil|Location1.Y=1683mil|Location2.Y=1856mil|Absolute=True">Modified Polygon: Polygon Shelved  (NONET_L02_P006) on Bottom Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDKFSDBKCU1MMYHRZXKYQY1UHTBDKXFO1PIM1SNPEFP4NJIS44L2WH"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Annular Ring (Minimum=7mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1185.875mil|Location2.X=1194.125mil|Location1.Y=1695.375mil|Location2.Y=1703.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1185.875mil|Location2.X=1194.125mil|Location1.Y=1695.375mil|Location2.Y=1703.625mil|Absolute=True">Minimum Annular Ring: (5mil &lt; 7mil) Via (1190mil,1691mil) from Top Layer to Bottom Layer (Annular Ring=5mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1185.875mil|Location2.X=1194.125mil|Location1.Y=1714.375mil|Location2.Y=1722.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1185.875mil|Location2.X=1194.125mil|Location1.Y=1714.375mil|Location2.Y=1722.625mil|Absolute=True">Minimum Annular Ring: (5mil &lt; 7mil) Via (1190mil,1710mil) from Top Layer to Bottom Layer (Annular Ring=5mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1205.875mil|Location2.X=1214.125mil|Location1.Y=1695.375mil|Location2.Y=1703.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1205.875mil|Location2.X=1214.125mil|Location1.Y=1695.375mil|Location2.Y=1703.625mil|Absolute=True">Minimum Annular Ring: (5mil &lt; 7mil) Via (1210mil,1691mil) from Top Layer to Bottom Layer (Annular Ring=5mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1205.875mil|Location2.X=1214.125mil|Location1.Y=1714.375mil|Location2.Y=1722.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1205.875mil|Location2.X=1214.125mil|Location1.Y=1714.375mil|Location2.Y=1722.625mil|Absolute=True">Minimum Annular Ring: (5mil &lt; 7mil) Via (1210mil,1710mil) from Top Layer to Bottom Layer (Annular Ring=5mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1255.875mil|Location2.X=1264.125mil|Location1.Y=1765.625mil|Location2.Y=1773.875mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1255.875mil|Location2.X=1264.125mil|Location1.Y=1765.625mil|Location2.Y=1773.875mil|Absolute=True">Minimum Annular Ring: (5.5mil &lt; 7mil) Via (1260mil,1760mil) from Top Layer to Bottom Layer (Annular Ring=5.5mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDLJKKXF5D1BDTG413WGYW33WIYGZN1AHIK1ZJUZHNP1INXH5JBPZN"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Hole Size Constraint (Min=13mil) (Max=265mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1183.375mil|Location2.X=1196.625mil|Location1.Y=1684.375mil|Location2.Y=1697.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1183.375mil|Location2.X=1196.625mil|Location1.Y=1684.375mil|Location2.Y=1697.625mil|Absolute=True">Hole Size Constraint: (12mil &lt; 13mil) Via (1190mil,1691mil) from Top Layer to Bottom Layer Actual Hole Size = 12mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1183.375mil|Location2.X=1196.625mil|Location1.Y=1703.375mil|Location2.Y=1716.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1183.375mil|Location2.X=1196.625mil|Location1.Y=1703.375mil|Location2.Y=1716.625mil|Absolute=True">Hole Size Constraint: (12mil &lt; 13mil) Via (1190mil,1710mil) from Top Layer to Bottom Layer Actual Hole Size = 12mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1203.375mil|Location2.X=1216.625mil|Location1.Y=1684.375mil|Location2.Y=1697.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1203.375mil|Location2.X=1216.625mil|Location1.Y=1684.375mil|Location2.Y=1697.625mil|Absolute=True">Hole Size Constraint: (12mil &lt; 13mil) Via (1210mil,1691mil) from Top Layer to Bottom Layer Actual Hole Size = 12mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1203.375mil|Location2.X=1216.625mil|Location1.Y=1703.375mil|Location2.Y=1716.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1203.375mil|Location2.X=1216.625mil|Location1.Y=1703.375mil|Location2.Y=1716.625mil|Absolute=True">Hole Size Constraint: (12mil &lt; 13mil) Via (1210mil,1710mil) from Top Layer to Bottom Layer Actual Hole Size = 12mil</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDNYDCK2AEDP2VNO2TEUT2X4MAFPS3BNJCAOX0JCL4RLZB40FFJDO"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Hole To Hole Clearance (Gap=10mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1184.375mil|Location2.X=1195.625mil|Location1.Y=1694.875mil|Location2.Y=1706.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1184.375mil|Location2.X=1195.625mil|Location1.Y=1694.875mil|Location2.Y=1706.125mil|Absolute=True">Hole To Hole Clearance Constraint: (7mil &lt; 10mil) Between Via (1190mil,1691mil) from Top Layer to Bottom Layer And Via (1190mil,1710mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1194.375mil|Location2.X=1205.625mil|Location1.Y=1685.375mil|Location2.Y=1696.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1194.375mil|Location2.X=1205.625mil|Location1.Y=1685.375mil|Location2.Y=1696.625mil|Absolute=True">Hole To Hole Clearance Constraint: (8mil &lt; 10mil) Between Via (1190mil,1691mil) from Top Layer to Bottom Layer And Via (1210mil,1691mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1194.375mil|Location2.X=1205.625mil|Location1.Y=1704.375mil|Location2.Y=1715.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1194.375mil|Location2.X=1205.625mil|Location1.Y=1704.375mil|Location2.Y=1715.625mil|Absolute=True">Hole To Hole Clearance Constraint: (8mil &lt; 10mil) Between Via (1190mil,1710mil) from Top Layer to Bottom Layer And Via (1210mil,1710mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1204.375mil|Location2.X=1215.625mil|Location1.Y=1694.875mil|Location2.Y=1706.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1204.375mil|Location2.X=1215.625mil|Location1.Y=1694.875mil|Location2.Y=1706.125mil|Absolute=True">Hole To Hole Clearance Constraint: (7mil &lt; 10mil) Between Via (1210mil,1691mil) from Top Layer to Bottom Layer And Via (1210mil,1710mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDSPS4FGKLCR2GKMLJTM3NDK5SLKOH02VERE2MXBJMEOX1U121DE3K"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=6mil) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1129.912mil|Location2.X=1137.162mil|Location1.Y=1626.795mil|Location2.Y=1634.045mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1129.912mil|Location2.X=1137.162mil|Location1.Y=1626.795mil|Location2.Y=1634.045mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (3.92mil &lt; 6mil) Between Arc (1144.882mil,1627.165mil) on Top Overlay And Pad R2-2(1110mil,1650.646mil) on Top Layer [Top Overlay] to [Top Solder] clearance [3.92mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1082.634mil|Location2.X=1089.884mil|Location1.Y=1610.365mil|Location2.Y=1617.615mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1082.634mil|Location2.X=1089.884mil|Location1.Y=1610.365mil|Location2.Y=1617.615mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (4.174mil &lt; 6mil) Between Pad R2-1(1110mil,1595.527mil) on Top Layer And Text "SW driver" (1082.172mil,1603.993mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [4.174mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1082.634mil|Location2.X=1089.884mil|Location1.Y=1633.691mil|Location2.Y=1640.941mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1082.634mil|Location2.X=1089.884mil|Location1.Y=1633.691mil|Location2.Y=1640.941mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (4.174mil &lt; 6mil) Between Pad R2-2(1110mil,1650.646mil) on Top Layer And Text "SW driver" (1082.172mil,1603.993mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [4.174mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDXS2CC0VM1QRWLN502KZUJLMRQCB22X053O4S50F3KF5UI2KY0H4B"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Board Clearance Constraint (Gap=0mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1048.464mil|Location2.X=1064.714mil|Location1.Y=1591.868mil|Location2.Y=1608.118mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1048.464mil|Location2.X=1064.714mil|Location1.Y=1591.868mil|Location2.Y=1608.118mil|Absolute=True">Board Outline Clearance(Outline Edge): (3.179mil &lt; 15mil) Between Board Edge And Text "SW driver" (1082.172mil,1603.993mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1048.38mil|Location2.X=1064.63mil|Location1.Y=1604.909mil|Location2.Y=1621.159mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1048.38mil|Location2.X=1064.63mil|Location1.Y=1604.909mil|Location2.Y=1621.159mil|Absolute=True">Board Outline Clearance(Outline Edge): (3.01mil &lt; 15mil) Between Board Edge And Text "V2.0" (1094mil,1724mil) on Bottom Overlay </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

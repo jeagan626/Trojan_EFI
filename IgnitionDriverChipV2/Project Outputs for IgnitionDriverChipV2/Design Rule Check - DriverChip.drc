@@ -1,0 +1,95 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Jack\Documents\GitHub\Trojan_EFI\IgnitionDriverChipV2\DriverChip.PcbDoc
+Date     : 8/2/2021
+Time     : 5:39:59 PM
+
+WARNING: Design contains shelved or modified (but not repoured) polygons. The result of DRC is not correct. Recommended to restore/repour all polygons and proceed with DRC again
+   Polygon named: NONET_L01_P005 On Top Layer
+   Polygon named: NONET_L01_P003 On Top Layer
+   Polygon named: NONET_L01_P002 On Top Layer
+   Polygon named: NONET_L01_P001 On Top Layer
+   Polygon named: NONET_L01_P000 On Top Layer
+   Polygon named: NONET_L02_P006 On Bottom Layer
+   Polygon named: NONET_L02_P004 On Bottom Layer
+   Polygon named: NONET_L01_P005 On Top Layer
+   Polygon named: NONET_L01_P003 On Top Layer
+   Polygon named: NONET_L01_P002 On Top Layer
+   Polygon named: NONET_L01_P001 On Top Layer
+   Polygon named: NONET_L01_P000 On Top Layer
+   Polygon named: NONET_L02_P006 On Bottom Layer
+   Polygon named: NONET_L02_P004 On Bottom Layer
+
+Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+   Violation between Modified Polygon: Polygon Shelved  (NONET_L01_P000) on Top Layer 
+   Violation between Modified Polygon: Polygon Shelved  (NONET_L01_P001) on Top Layer 
+   Violation between Modified Polygon: Polygon Shelved  (NONET_L01_P002) on Top Layer 
+   Violation between Modified Polygon: Polygon Shelved  (NONET_L01_P003) on Top Layer 
+   Violation between Modified Polygon: Polygon Shelved  (NONET_L01_P005) on Top Layer 
+   Violation between Modified Polygon: Polygon Shelved  (NONET_L02_P004) on Bottom Layer 
+   Violation between Modified Polygon: Polygon Shelved  (NONET_L02_P006) on Bottom Layer 
+Rule Violations :7
+
+Processing Rule : Width Constraint (Min=6mil) (Max=400mil) (Preferred=8mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=16mil) (Conductor Width=6mil) (Air Gap=6mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=7mil) (All)
+   Violation between Minimum Annular Ring: (5mil < 7mil) Via (1190mil,1691mil) from Top Layer to Bottom Layer (Annular Ring=5mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5mil < 7mil) Via (1190mil,1710mil) from Top Layer to Bottom Layer (Annular Ring=5mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5mil < 7mil) Via (1210mil,1691mil) from Top Layer to Bottom Layer (Annular Ring=5mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5mil < 7mil) Via (1210mil,1710mil) from Top Layer to Bottom Layer (Annular Ring=5mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.5mil < 7mil) Via (1260mil,1760mil) from Top Layer to Bottom Layer (Annular Ring=5.5mil) On (Top Layer)
+Rule Violations :5
+
+Processing Rule : Hole Size Constraint (Min=13mil) (Max=265mil) (All)
+   Violation between Hole Size Constraint: (12mil < 13mil) Via (1190mil,1691mil) from Top Layer to Bottom Layer Actual Hole Size = 12mil
+   Violation between Hole Size Constraint: (12mil < 13mil) Via (1190mil,1710mil) from Top Layer to Bottom Layer Actual Hole Size = 12mil
+   Violation between Hole Size Constraint: (12mil < 13mil) Via (1210mil,1691mil) from Top Layer to Bottom Layer Actual Hole Size = 12mil
+   Violation between Hole Size Constraint: (12mil < 13mil) Via (1210mil,1710mil) from Top Layer to Bottom Layer Actual Hole Size = 12mil
+Rule Violations :4
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+   Violation between Hole To Hole Clearance Constraint: (7mil < 10mil) Between Via (1190mil,1691mil) from Top Layer to Bottom Layer And Via (1190mil,1710mil) from Top Layer to Bottom Layer 
+   Violation between Hole To Hole Clearance Constraint: (8mil < 10mil) Between Via (1190mil,1691mil) from Top Layer to Bottom Layer And Via (1210mil,1691mil) from Top Layer to Bottom Layer 
+   Violation between Hole To Hole Clearance Constraint: (8mil < 10mil) Between Via (1190mil,1710mil) from Top Layer to Bottom Layer And Via (1210mil,1710mil) from Top Layer to Bottom Layer 
+   Violation between Hole To Hole Clearance Constraint: (7mil < 10mil) Between Via (1210mil,1691mil) from Top Layer to Bottom Layer And Via (1210mil,1710mil) from Top Layer to Bottom Layer 
+Rule Violations :4
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=6mil) (IsPad),(All)
+   Violation between Silk To Solder Mask Clearance Constraint: (3.92mil < 6mil) Between Arc (1144.882mil,1627.165mil) on Top Overlay And Pad R2-2(1110mil,1650.646mil) on Top Layer [Top Overlay] to [Top Solder] clearance [3.92mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (4.174mil < 6mil) Between Pad R2-1(1110mil,1595.527mil) on Top Layer And Text "SW driver" (1082.172mil,1603.993mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [4.174mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (4.174mil < 6mil) Between Pad R2-2(1110mil,1650.646mil) on Top Layer And Text "SW driver" (1082.172mil,1603.993mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [4.174mil]
+Rule Violations :3
+
+Processing Rule : Silk to Silk (Clearance=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
+   Violation between Board Outline Clearance(Outline Edge): (3.179mil < 15mil) Between Board Edge And Text "SW driver" (1082.172mil,1603.993mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (3.01mil < 15mil) Between Board Edge And Text "V2.0" (1094mil,1724mil) on Bottom Overlay 
+Rule Violations :2
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 25
+Waived Violations : 0
+Time Elapsed        : 00:00:01

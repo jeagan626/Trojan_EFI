@@ -1,0 +1,186 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Arduino:Arduino_Mega2560_Shield XA1
+U 1 1 62B16AE5
+P 2750 4700
+F 0 "XA1" H 2750 2319 60  0000 C CNN
+F 1 "Arduino_Mega2560_Shield" H 2750 2213 60  0000 C CNN
+F 2 "J-Eagan:Arduino_Mega2560_Shield" H 3450 7450 60  0001 C CNN
+F 3 "https://store.arduino.cc/arduino-mega-2560-rev3" H 3450 7450 60  0001 C CNN
+	1    2750 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LibraryLoader:953118-1 J1
+U 1 1 62B215C5
+P 6850 2750
+F 0 "J1" H 7300 3015 50  0000 C CNN
+F 1 "953118-1" H 7300 2924 50  0000 C CNN
+F 2 "9531181" H 7600 2850 50  0001 L CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F953118%7FG%7Fpdf%7FFrench%7FFRE_CD_953118_G.pdf%7F953118-1" H 7600 2750 50  0001 L CNN
+F 4 "40pos MQS .63 header 180deg" H 7600 2650 50  0001 L CNN "Description"
+F 5 "21.7" H 7600 2550 50  0001 L CNN "Height"
+F 6 "TE Connectivity" H 7600 2450 50  0001 L CNN "Manufacturer_Name"
+F 7 "953118-1" H 7600 2350 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "571-953118-1" H 7600 2250 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/953118-1?qs=Q0GhXaox%252BNF1Rdk0Qq6iQg%3D%3D" H 7600 2150 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 7600 2050 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 7600 1950 50  0001 L CNN "Arrow Price/Stock"
+	1    6850 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L J-Eagan:Sw_driverV1 U2
+U 1 1 62B82590
+P 5150 1650
+F 0 "U2" H 5150 2115 50  0000 C CNN
+F 1 "Sw_driverV1" H 5150 2024 50  0000 C CNN
+F 2 "J-Eagan:Sw_driverV1" H 4950 2000 50  0001 C CNN
+F 3 "" H 4950 2000 50  0001 C CNN
+	1    5150 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0103
+U 1 1 62B904E7
+P 6850 2850
+F 0 "#PWR0103" H 6850 2700 50  0001 C CNN
+F 1 "+12V" V 6865 2978 50  0000 L CNN
+F 2 "" H 6850 2850 50  0001 C CNN
+F 3 "" H 6850 2850 50  0001 C CNN
+	1    6850 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+12V #PWR0104
+U 1 1 62B9122D
+P 7000 1300
+F 0 "#PWR0104" H 7000 1150 50  0001 C CNN
+F 1 "+12V" V 7015 1428 50  0000 L CNN
+F 2 "" H 7000 1300 50  0001 C CNN
+F 3 "" H 7000 1300 50  0001 C CNN
+	1    7000 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L J-Eagan:LS_Driverv2 U1
+U 1 1 62B871FD
+P 7300 1400
+F 0 "U1" H 7528 1496 50  0000 L CNN
+F 1 "LS_Driverv2" H 7528 1405 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 7450 1150 50  0001 C CNN
+F 3 "" H 7450 1150 50  0001 C CNN
+	1    7300 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L J-Eagan:LS_Driverv2 U3
+U 1 1 62B98F57
+P 7300 1950
+F 0 "U3" H 7528 2046 50  0000 L CNN
+F 1 "LS_Driverv2" H 7528 1955 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 7450 1700 50  0001 C CNN
+F 3 "" H 7450 1700 50  0001 C CNN
+	1    7300 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0107
+U 1 1 62B98F51
+P 7000 1850
+F 0 "#PWR0107" H 7000 1700 50  0001 C CNN
+F 1 "+12V" V 7015 1978 50  0000 L CNN
+F 2 "" H 7000 1850 50  0001 C CNN
+F 3 "" H 7000 1850 50  0001 C CNN
+	1    7000 1850
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7000 1500 0    50   Input ~ 0
+FuelPump
+Text GLabel 6850 3850 0    50   Input ~ 0
+FuelPump
+$Comp
+L power:+12V #PWR0101
+U 1 1 62BA2196
+P 4800 1800
+F 0 "#PWR0101" H 4800 1650 50  0001 C CNN
+F 1 "+12V" V 4815 1928 50  0000 L CNN
+F 2 "" H 4800 1800 50  0001 C CNN
+F 3 "" H 4800 1800 50  0001 C CNN
+	1    4800 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 62BA3125
+P 4800 1700
+F 0 "#PWR0102" H 4800 1450 50  0001 C CNN
+F 1 "GND" V 4805 1572 50  0000 R CNN
+F 2 "" H 4800 1700 50  0001 C CNN
+F 3 "" H 4800 1700 50  0001 C CNN
+	1    4800 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 62BA38BA
+P 6850 2750
+F 0 "#PWR0105" H 6850 2500 50  0001 C CNN
+F 1 "GND" V 6855 2622 50  0000 R CNN
+F 2 "" H 6850 2750 50  0001 C CNN
+F 3 "" H 6850 2750 50  0001 C CNN
+	1    6850 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 62BA4101
+P 6850 3750
+F 0 "#PWR0106" H 6850 3500 50  0001 C CNN
+F 1 "GND" V 6855 3622 50  0000 R CNN
+F 2 "" H 6850 3750 50  0001 C CNN
+F 3 "" H 6850 3750 50  0001 C CNN
+	1    6850 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 62BA55F1
+P 7000 1950
+F 0 "#PWR0108" H 7000 1700 50  0001 C CNN
+F 1 "GND" V 7005 1822 50  0000 R CNN
+F 2 "" H 7000 1950 50  0001 C CNN
+F 3 "" H 7000 1950 50  0001 C CNN
+	1    7000 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 62BA6262
+P 7000 1400
+F 0 "#PWR0109" H 7000 1150 50  0001 C CNN
+F 1 "GND" V 7005 1272 50  0000 R CNN
+F 2 "" H 7000 1400 50  0001 C CNN
+F 3 "" H 7000 1400 50  0001 C CNN
+	1    7000 1400
+	0    1    1    0   
+$EndComp
+Text GLabel 7000 1200 0    50   Input ~ 0
+FpCtrl
+Text GLabel 4050 2750 2    50   BiDi ~ 0
+FpCtrl
+$EndSCHEMATC

@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name J-Eagan)(type KiCad)(uri ${KIPRJMOD}/J-Eagan.pretty)(options "")(descr ""))
+)

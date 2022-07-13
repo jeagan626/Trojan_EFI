@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "J-Eagan")(type "Legacy")(uri "${KIPRJMOD}/J-Eagan.lib")(options "")(descr ""))
+  (lib (name "T6Mega-rescue")(type "Legacy")(uri "${KIPRJMOD}/T6Mega-rescue.lib")(options "")(descr ""))
+)

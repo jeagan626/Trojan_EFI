@@ -1,7 +1,7 @@
 {
   "board": {
-    "active_layer": 0,
-    "active_layer_preset": "",
+    "active_layer": 44,
+    "active_layer_preset": "All Layers",
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
@@ -20,7 +20,7 @@
       "footprints": true,
       "graphics": true,
       "keepouts": true,
-      "lockedItems": true,
+      "lockedItems": false,
       "otherItems": true,
       "pads": true,
       "text": true,
@@ -35,15 +35,12 @@
       3,
       4,
       5,
-      6,
-      7,
       8,
       9,
       10,
       11,
       12,
       13,
-      14,
       15,
       16,
       17,
@@ -64,13 +61,15 @@
       33,
       34,
       35,
-      36
+      36,
+      39,
+      40
     ],
     "visible_layers": "fffffff_ffffffff",
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "T6Mega.kicad_prl",
+    "filename": "ArduinoMegaEcuJE.kicad_prl",
     "version": 3
   },
   "project": {

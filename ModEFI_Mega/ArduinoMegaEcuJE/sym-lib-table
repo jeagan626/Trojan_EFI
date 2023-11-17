@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "MQSconn")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty/MQSconn.kicad_sym")(options "")(descr ""))
+  (lib (name "J-Eagan")(type "KiCad")(uri "C:/Users/Jack Eagan/Documents/GitHub/J-Efi/T6Mega/J-Eagan.kicad_sym")(options "")(descr ""))
+)

@@ -1,4 +1,4 @@
-21750216322779231
+21751916073804265
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -59492,13 +59492,6 @@ THT
 0
 4
 2
-J-Eagan
-Arduino_Mega2560_Shield
-https://store.arduino.cc/arduino-mega-2560-rev3
-
-0
-86
-85
 Jumper
 SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm
 SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, bridged with 2 copper strips
@@ -60780,6 +60773,20 @@ Yellow 5381 Series LED
 0
 2
 2
+Library
+MQS40P
+
+
+0
+40
+40
+Library
+Sw_driverV1
+
+
+0
+8
+8
 ModEFI_Modules
 Sw_driverV1
 

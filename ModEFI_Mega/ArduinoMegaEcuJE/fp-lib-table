@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Library")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty")(options "")(descr ""))
+  (lib (name "ModEFI_Modules")(type "KiCad")(uri "C:/Users/Jack Eagan/Documents/GitHub/J-Efi/ModEFI Modules/ModEFI_Modules.pretty")(options "")(descr ""))
+)
